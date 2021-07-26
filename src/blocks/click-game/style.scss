@@ -1,0 +1,42 @@
+body {
+	.mjj-plugin-starter.clickgame {
+		display: flex;
+		justify-content: center;
+		.click-circle {
+			border-radius: 50%;
+			border: 1px solid white;
+			color: white;
+			width: 200px;
+			height: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&.start {
+				background-color: green;
+				border-color: green;
+			}
+
+			&.running {
+				background-color: rgb(110, 0, 110);
+				border-color: rgb(110, 0, 110);
+			}
+
+			&.won {
+				background-color: blue;
+				border-color: blue;
+			}
+
+			&.lost {
+				background-color: red;
+				border-color: red;
+			}
+		}
+		.game {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+}

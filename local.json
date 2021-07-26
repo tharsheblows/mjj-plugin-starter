@@ -1,0 +1,4 @@
+{
+	"adminURL": "http://wp-test.test/wp-admin/post.php?post=46&action=edit",
+	"frontEndURL": "http://wp-test.test/46-2/"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Coding Standards for Plugins">
+	<description>Generally-applicable sniffs for WordPress plugins.</description>
+
+	<rule ref="WordPress-Core">
+		<!-- Yoda conditions, you do not need. -->
+		<exclude name="WordPress.PHP.YodaConditions" />
+		<!-- Short array syntax is good as are short ternaries. -->
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+		<exclude name="WordPress.PHP.DisallowShortTernary" />
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+	</rule>
+	<rule ref="WordPress-Docs" />
+
+	<!-- No long array syntax. -->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax" />
+
+	<!-- Check all PHP files in directory tree by default. -->
+	<arg name="extensions" value="php"/>
+	<file>.</file>
+
+	<!-- Show progress and sniff codes in all reports -->
+	<arg value="ps"/>
+
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/build/*</exclude-pattern>
+	<exclude-pattern>*/dist/*</exclude-pattern>
+</ruleset>

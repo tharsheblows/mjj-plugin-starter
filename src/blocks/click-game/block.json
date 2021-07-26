@@ -1,0 +1,17 @@
+{
+	"name": "mjj-plugin-starter/clickgame",
+	"category": "common",
+	"attributes": {
+		"minTime": {
+			"type": "number",
+			"default": 6
+		},
+		"maxTime": {
+			"type": "number",
+			"default": 10
+		},
+		"blockId": {
+			"type": "string"
+		}
+	}
+}

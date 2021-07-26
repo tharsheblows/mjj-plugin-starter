@@ -1,0 +1,11 @@
+{
+	"name": "tharsheblows/mjj-plugin-starter",
+	"description": "Starter plugin with blocks using PSR4 for autoloading.",
+	"license": "GPL-2.0",
+	"autoload": {
+		"psr-4": {
+			"Tharsheblows\\MjjPluginStarter\\": "includes/"
+		}
+	},
+	"require": {}
+}
