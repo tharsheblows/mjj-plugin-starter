@@ -10,7 +10,7 @@ A generic plugin starter that I use.
 4. Run npm install in the same place.
 5. Run npm run build in the same place.
 
-At this point, the sample block should work. It's named "MJJ Plugin Starter Click Game" or somesuch. You should go ahead and add it to a post to test that this is working out of the box.
+At this point, the sample block should work. It's named "MJJ Plugin Starter Click Game" or somesuch. You should go ahead and add it to a post to test that this is working out of the box. There is also a server side rendered block called "MJJ Plugin Starter Useless Div" which is a pointless div but you can change the background colour. Ok, if you've tried those then continue.
 
 6. Rename everything else, I don't have a script for that to easily do at the moment.
 7. To start development, make a post that you'll use for testing your block and save it. Make a note of those urls.

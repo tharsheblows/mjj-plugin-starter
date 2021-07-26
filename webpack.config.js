@@ -35,6 +35,8 @@ const adminConfig = {
 					'build/*.css',
 					'includes/*.php',
 					'plugin.php',
+					'src/blocks/**/*.php',
+					'src/blocks/index.php',
 				],
 			},
 			{
@@ -72,6 +74,8 @@ const frontEndConfig = {
 					'dist/*',
 					'includes/*.php',
 					'plugin.php',
+					'src/blocks/**/*.php',
+					'src/blocks/index.php',
 				],
 			},
 			{

@@ -29,7 +29,5 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
 $hooks = new \Tharsheblows\MjjPluginStarter\Hooks();
 $hooks->add();
 
-// Register server-side code for individual blocks.
-foreach ( glob( dirname( __FILE__ ) . '/src/blocks/*/index.php' ) as $block_logic ) {
-	require_once $block_logic;
-}
+// This will handle registering all the server side blocks.
+require_once PLUGIN_PATH . '/src/index.php';

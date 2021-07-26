@@ -1,0 +1,10 @@
+body {
+	.mjj-plugin-starter.uselessdiv {
+		border: 1px solid transparent;
+		padding: 1em 1.67em;
+		color: black;
+		&:hover {
+			border: 1px solid green;
+		}
+	}
+}

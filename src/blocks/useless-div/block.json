@@ -1,0 +1,13 @@
+{
+	"name": "mjj-plugin-starter/uselessdiv",
+	"category": "common",
+	"attributes": {
+		"blockId": {
+			"type": "string"
+		},
+		"color": {
+			"type": "string",
+			"default": "#FFC0CB"
+		}
+	}
+}

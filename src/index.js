@@ -15,9 +15,10 @@ import { registerBlockType } from '@wordpress/blocks';
 
 // Register Blocks
 import * as clickgame from './blocks/click-game';
+import * as uselessdiv from './blocks/useless-div';
 
 export function registerBlocks() {
-	[clickgame].forEach((block) => {
+	[clickgame, uselessdiv].forEach((block) => {
 		if (!block) {
 			// return;
 		}

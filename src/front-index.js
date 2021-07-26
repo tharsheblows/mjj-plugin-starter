@@ -17,6 +17,11 @@ for (const element of elementsToRender) {
 	const attrString = element.getAttribute('data-attr'); // The JSON string with the attributes.
 	const blockName = element.getAttribute('data-block'); // The block's name.
 	const attr = JSON.parse(attrString); // Putting the attributes in a JSON object.
+
+	if (!blockNameToComponents[blockName]) {
+		continue;
+	}
+
 	const ComponentToUse = blockNameToComponents[blockName]; // Which component should this use?
 
 	ReactDOM.render(<ComponentToUse attr={attr} />, element); // Render the component.
